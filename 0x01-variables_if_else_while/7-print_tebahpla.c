@@ -4,7 +4,7 @@
  * print letters of the alphabets in reverse
  * Return: 0 (Success)
  */
-int mian(void)
+int main(void)
 {
 	char rev;
 
