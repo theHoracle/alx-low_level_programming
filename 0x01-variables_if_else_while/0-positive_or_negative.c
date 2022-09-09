@@ -19,6 +19,5 @@ else if (n > 0)
 	printf("%i is positive\n", n);
 else
 	printf("%i is zero\n");
-}
 return (0);
 }
