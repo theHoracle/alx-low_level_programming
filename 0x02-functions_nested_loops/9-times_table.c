@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * times_table - print times table 
  *
@@ -16,12 +16,19 @@ void times_table(void)
 		{
 			val = hor * vert;
 			if (hor == 0)
-				printf("%d", val);
+				putchar('0' +  val);
 			if (hor != 0 && val < 10)
-				printf(",  %d", val);
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(val + '0');
+			}
 			else
 			{
-				printf(", %d", val);
+				_putchar(',');
+				_putchar(' ');
+				_putchar(val + '0');
 			}
 			hor++;
 		}
