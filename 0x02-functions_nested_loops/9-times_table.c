@@ -33,7 +33,7 @@ void times_table(void)
 			hor++;
 		}
 
-		putchar('\n');
+		_putchar('\n');
 		vert++;
 	}
 }
