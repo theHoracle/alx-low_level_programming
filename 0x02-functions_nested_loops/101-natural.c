@@ -9,14 +9,16 @@ int main(void)
 {
 	int num = 1024, sum, count;
 
-	for (count = 0; count < num; count++)
+	sum = 0;
+	count = 0;
+	while (count < num)
 	{
-		sum = 0;
-		if (count % 3 == 0)
+		if (count % 3 == 0 || count % 5 == 0)
+		{
 			sum += count;
-		if (count % 5 == 0)
-			sum += count;
+		}
+		count++;
 	}
 	printf("%d\n", sum);
-	return (0);	
+	return (0);
 }
