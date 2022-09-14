@@ -16,7 +16,7 @@ void times_table(void)
 		{
 			val = hor * vert;
 			if (hor == 0)
-				putchar('0' +  val);
+				_putchar('0' +  val);
 			if (hor != 0 && val < 10)
 			{
 				_putchar(',');
