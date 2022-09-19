@@ -14,8 +14,8 @@ void rev_string(char *s)
 		len++;
 	}
 	while (len--)
-	}
-		if (len == -1)
+	{
+		if (len == -1)	
 			break;
 		_putchar(s[len]);
 	}
