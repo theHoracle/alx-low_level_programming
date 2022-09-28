@@ -4,9 +4,10 @@
  * @n: find sqrt of int n
  * Return: sqrt
  */
+int _square_root(int n, int num);
 int _sqrt_recursion(int n)
 {
-	return (_sqrt(n, 1));
+	return (_square_root(n, 1));
 }
 /**
  * _sqrt - entry point
@@ -14,12 +15,12 @@ int _sqrt_recursion(int n)
  * @num: num of tries
  * Return: sqrt of n
  */
-int _sqrt(int n, int num)
+int _square_root(int n, int num)
 {
 	if (num * num == n)
 		return (n);
 	else if (num * num < n)
-		return (_sqrt(n, num + 1));
+		return (_square_root(n, num + 1));
 
 	return (-1);
 }
