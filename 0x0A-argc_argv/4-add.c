@@ -1,4 +1,4 @@
-include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 /**
  * isInteger - checks if s is an integer
@@ -31,10 +31,10 @@ int main(int argc, char const *argv[])
 	while (--argc)
 	{
 		if (isInteger(argv[argc]))
-			{
-				printf("Error\n");
-				return (1);
-			}
+		{
+			printf("Error\n");
+			return (1);
+		}
 		sum += atoi(argv[argc]);
 	}
 
