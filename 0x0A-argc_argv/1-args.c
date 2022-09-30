@@ -1,5 +1,5 @@
 #include <stdio.h>
-/***
+/**
  * main - print no of arguments given
  * @argc: arg coiunt
  * @argv: arg vector
